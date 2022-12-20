@@ -43,6 +43,7 @@ simulator_text = ("BATTLE SIMULATOR")
 name_char_1 = ("What is the name of your first fighter?")
 char_1_class = ("What is your class (monk, puppy, warrior, wizard, etc.?\n")
 name_char_2 = ("Our first fighter is ready. Name your secong fighter!")
+char_2_class = ("What is your class (monk, puppy, warrior, wizard, etc.?")
 filler_text = ("💀 ⚔️ 🏆   🏆 ⚔️ 💀")
 
 #text to be centered and stats on both sides, character names on top
@@ -82,8 +83,7 @@ time.sleep(1)
 character_2_name = input(f"{name_char_2}\n\n").title()
 print()
 time.sleep(0.5)
-character_2_class = input(
-    "What is your class (monk, puppy, warrior, wizard, etc.?\n").lower()
+character_2_class = input(f"{char_2_class}\n\n").lower()
 print()
 
 character_2_health = health_roll()
@@ -96,7 +96,7 @@ print(
 
 time.sleep(3)
 os.system("clear")
-announcement_text1 = (f"FIGHTERS! ENTER THE ARENA!")
+announcement_text1 = "FIGHTERS! ENTER THE ARENA!"
 announcement_text2 = (
     f"💀 {character_1_name} 💀 and {character_2_name} 💀 will battle to the DEATH 💀"
 )
